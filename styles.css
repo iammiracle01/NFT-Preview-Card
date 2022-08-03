@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 18px;
+    gap: 1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    width: 325px;
+    height: auto;
+    margin: 5rem auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: hsl(216, 50%, 16%);
+    text-align: left;
+    box-shadow: 0 25px 3px 9px rgb(19, 19, 43, 0.5);
+}
+
+.equilibrium {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/icon-view.svg");
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 15px 0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+h2~p:nth-of-type(1),
+.content>span p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    word-spacing: 1;
+    line-height: 1.5;
+}
+
+.content {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content>p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.content>p img {
+    margin-right: 5px;
+}
+
+.content>span {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.content>span img {
+    margin-right: 5px;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+    margin: 20px 0;
+}
+
+hr+p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+hr+p img {
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+hr+p span {
+    color: white;
+    margin-left: 0.3rem;
+}
+
+hr+p span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media (min-width: 600px) {
+    .card {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 280px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
