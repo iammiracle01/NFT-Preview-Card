@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/iammiracle01/Responsive-Huddle-Landing-Page)
+- Solution URL: (https://github.com/iammiracle01/NFT-Preview-Card)
 - Live Site URL: (https://iammiracle01.github.io/Responsive-Huddle-Landing-Page/)
 
 ## My process
