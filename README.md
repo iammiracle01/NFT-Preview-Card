@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/iammiracle01/NFT-Preview-Card)
-- Live Site URL: (https://iammiracle01.github.io/Responsive-Huddle-Landing-Page/)
+- Live Site URL: (https://iammiracle01.github.io/NFT-Preview-Card/)
 
 ## My process
 1. First of all, I started out with the normal HTMl semantic structure(head, body.....footer).
